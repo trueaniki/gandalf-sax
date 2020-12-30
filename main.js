@@ -3,7 +3,14 @@ const fs = require('fs')
 const path = require('path')
 
 const server = http.createServer((req, res) => {
-    const filePath = path.join(__dirname, 'static', req.url === '/' ? 'index.html' : req.url)
+    if(req.url === '/') {
+        res.writeHead(302, {
+            'Location': 'index.html'
+        });
+        res.end()
+        return
+    }
+    const filePath = path.join(__dirname, 'static', req.url)
     const notFoundPagePath = path.join(__dirname, 'static', 'not_found_page.html')
     console.log(filePath)
     fs.access(filePath, fs.constants.F_OK, err => {
