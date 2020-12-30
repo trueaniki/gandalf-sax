@@ -1,0 +1,21 @@
+body {
+    background-color: slategrey;
+}
+
+h1 {
+    font-family: Calibri, serif;
+    margin-top: 20%;
+    text-align: center;
+    color: white;
+}
+
+#about-button {
+    width: 50px;
+    font-family: Calibri, serif;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0;
+    background-color: slategrey;
+    margin-left: 50%;
+}
