@@ -8,8 +8,15 @@
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/soundmanager2/V2.97a.20170601/script/soundmanager2-nodebug-jsmin.js"></script>-->
 </head>
 <body>
-<div id="go">GO</div>
-<img style="display: none" src="https://media.giphy.com/media/Qs75BqLW44RrP0x6qL/giphy.gif" alt="WAIT FOR IT..." id="flex">
+<div id="go-button" class="button">GO RIGHT NOW</div>
+<div id="wait-for-it" style="display: none">WAIT FOR IT...</div>
+<div id="timer" style="display: none"></div>
+<div id="set-timer-button" class="button">SET TIMER</div>
+<button id="fullscreen-button" style="display: none">fullscreen</button>
+<label>
+    <input type="datetime-local" id="time-input">
+</label>
+<img style="display: none" src="https://media.giphy.com/media/Qs75BqLW44RrP0x6qL/giphy.gif" alt="OH NO" id="gandalf">
 <audio id="sound" src="sound.wav" loop></audio>
 <script src="gandalf.js"></script>
 </body>
